@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #2f0c38;
+    color: #f5f6f7;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #3c1b47;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+}
+
+label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #0a0a23;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 1rem;
+    
+}
+
+.inline {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 0.5em;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 1.5em auto;
+    padding: 0.7em;
+    font-size: 1.1rem;
+    background-color: #660f79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #851296;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 1em;
+    }
+
+    input, textarea, select {
+        font-size: 0.9rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+.credits {
+    margin-bottom: 15px;
+  }
+  
