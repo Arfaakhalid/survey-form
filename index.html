@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve our platform!</em></p>
+
+    <form id="survey-form" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required />
+
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your Email" required />
+
+            <label id="number-label" for="number">Age</label>
+            <input id="number" type="number" placeholder="Age" min="12" max="120" required />
+        </fieldset>
+
+        <fieldset>
+            <legend>Account</legend>
+            <label id="dropdown" for="account">Select your account type:</label>
+            <select id="account">
+                <option>select one</option>
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>Professional</option>
+                <option>Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Domain</legend>
+            <label id="radio">Select your domain of course:</label>
+            <label for="cs" class="inline"><input type="radio" id="cs" name="radio" value="Computer Science" checked /> Computer Science</label>
+            <label for="se" class="inline"><input type="radio" id="se" name="radio" value="Software Engineering" /> Software Engineering</label>
+            <label for="it" class="inline"><input type="radio" id="it" name="radio" value="Information Technology" /> Information Technology</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label id="checkbox">Select your educational level:</label>
+            <label><input type="checkbox" value="school" /> School</label>
+            <label><input type="checkbox" value="college" /> College</label>
+            <label><input type="checkbox" value="university" /> University</label>
+            <label><input type="checkbox" value="postgraduate" /> Postgraduate</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+            <label>Select your hobbies:</label>
+            <label><input type="checkbox" value="reading" /> Reading</label>
+            <label><input type="checkbox" value="traveling" /> Traveling</label>
+            <label><input type="checkbox" value="coding" /> Coding</label>
+            <label><input type="checkbox" value="sports" /> Sports</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+            <label id="feedback" for="feedback">Write your valuable feedback here:</label>
+            <textarea rows="4" cols="16" id="feedback" placeholder="Enter your feedback here..."></textarea>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+
+    <footer>
+        <p class="credits">All Credits are reserved to Arfa Rumman Khalid</p>
+      </footer>
+</body>
+</html>
